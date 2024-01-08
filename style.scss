@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: linear-gradient(135deg, #5c40c2, #a29bfe);
+    min-height: 100vh;
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
