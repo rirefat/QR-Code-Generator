@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body{
@@ -22,8 +25,8 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     p{
-        font-weight: 600;
-        font-size: 15px;
+        font-weight: 500;
+        font-size: 22px;
         margin-bottom: 8px;
         
     }
@@ -41,7 +44,7 @@ body{
     button{
         width: 100%;
         height: 50px;
-        background: #393939;
+        background: #004ade;
         color: #fff;
         border: 0;
         outline: 0;
@@ -49,6 +52,12 @@ body{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         cursor: pointer;
         margin: 20px 0;
-        font-weight: 50;
+        font-weight: 500;
+        transition: all 0.2s;
+
+        &:hover{
+            background: #0044ad;
+            transform: translateY(-2px);
+        }
     }
 }
