@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
-body{
+body {
     background: linear-gradient(135deg, #5c40c2, #a29bfe);
     min-height: 100vh;
 }
 
-.container{
+.container {
     text-align: center;
     width: 400px;
     padding: 25px 35px;
@@ -24,14 +24,14 @@ body{
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    p{
+    p {
         font-weight: 500;
         font-size: 22px;
         margin-bottom: 8px;
-        
+
     }
 
-    input{
+    input {
         width: 100%;
         height: 50px;
         border: 1px solid #393939;
@@ -41,7 +41,20 @@ body{
         border-radius: 8px;
     }
 
-    button{
+    #imgBox {
+        width: 200px;
+        border-radius: 5px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 1s;
+
+        img{
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    button {
         width: 100%;
         height: 50px;
         background: #004ade;
@@ -55,9 +68,15 @@ body{
         font-weight: 500;
         transition: all 0.2s;
 
-        &:hover{
+        &:hover {
             background: #0044ad;
             transform: translateY(-2px);
         }
     }
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
 }
